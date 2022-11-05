@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+class Cliente{
+
+constructor(dni,nombre,apellidos,email,membresia,edad,icon){
+    this.DNI = dni;
+    this.Nombre = nombre;
+    this.Apellidos = apellidos;
+    this.Email = email;       
+    this.Membresia = membresia;
+    this.Edad = edad;
+    this.Icon = icon || "bobo";
+}
+
+mayor18(){
+    let adult = false;
+    if(this.Edad>=18){
+        adult = true;
+    }
+    return adult;
+}
+
+cambiaMembresia(membresia){
+    this.Membresia = membresia;
+    }
+
+    cambiaNombre(nombre){
+    this.nombre = nombre;
+}
+
+}
+
+
+var c1 = new Cliente(21434,"Antonio","Visier Simuer","Anton@gabsmail.com","Primiun",23);
+aux = c1.mayor18();
+console.log(aux);
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
